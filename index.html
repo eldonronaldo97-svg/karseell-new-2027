@@ -2,162 +2,367 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>مجموعة كارسيل الأصلية – العناية الكاملة بالشعر</title>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Karseell Collagen</title>
 
-<!-- Meta Pixel Code -->
+<!-- Facebook Pixel -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1107305698235534');
-fbq('track', 'PageView');
+s.parentNode.insertBefore(t,s)
+}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','1835618597105139');
+fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1107305698235534&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
 
 <style>
-body {font-family:'Cairo',sans-serif;margin:0;background:#fff;color:#222;direction:rtl;}
-header {background:#b22222;color:white;text-align:center;padding:16px;}
-.hero {text-align:center;padding:10px;}
-.hero img {width:100%;max-width:420px;border-radius:12px;}
-.content {max-width:600px;margin:auto;padding:20px;}
-.offer-card {border:2px solid #ccc;border-radius:10px;padding:12px;text-align:center;margin-bottom:12px;cursor:pointer;}
-.offer-card.selected {border-color:#b22222;background:#fff6f6;}
-.form-section {background:#fafafa;padding:20px;border-radius:12px;border:1px solid #eee;}
-input,textarea,select {width:100%;padding:12px;margin-bottom:12px;border:1px solid #ccc;border-radius:8px;font-size:16px;}
-button {width:100%;background:#b22222;color:white;padding:14px;border:none;border-radius:10px;font-size:18px;cursor:pointer;transition:all 0.3s ease;}
-button:disabled {opacity:0.8;cursor:not-allowed;}
-.success {display:none;text-align:center;color:green;font-weight:bold;margin-top:10px;}
-footer {text-align:center;color:#777;font-size:14px;padding:20px;}
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+font-family:system-ui,-apple-system,Arial;
+background:#4b0f1b;
+color:#f5f5f5;
+line-height:1.8
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:34px 16px;
+background:linear-gradient(135deg,#3a0c15,#6d1a2a)
+}
+.hero h1{
+color:#f5c16c;
+font-size:26px;
+margin-bottom:8px
+}
+.hero p{
+color:#f1eaea;
+font-size:15px
+}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+margin-top:14px;
+background:#f5c16c;
+color:#3a0c15;
+padding:12px 30px;
+border-radius:30px;
+font-weight:800;
+text-decoration:none
+}
+
+.wrap{
+max-width:900px;
+margin:auto;
+padding:18px
+}
+
+/* ===== سكشن مقسوم نصين ===== */
+.ks-split{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+margin-top:25px
+}
+.ks-box{
+background:#5a1321;
+border-radius:18px;
+padding:22px
+}
+.ks-box h2{
+color:#f5c16c;
+font-size:22px;
+margin-bottom:14px
+}
+.ks-box ul,
+.ks-box ol{
+padding-right:18px;
+font-size:15px
+}
+.ks-box li{
+margin-bottom:8px
+}
+.ks-box ul li::before{
+content:"✔ ";
+color:#22c55e
+}
+.highlight{
+color:#f5c16c;
+font-weight:800
+}
+
+/* عروض */
+  .offers-title{
+  text-align:center;
+  font-size:18px;
+  font-weight:800;
+  color:#f5c16c;
+  margin:30px 0 10px;
+}
+.offers-trust{
+  text-align:center;
+  margin:15px 0 30px;
+  font-size:16px;
+  font-weight:800;
+  color:#f5c16c;
+}
+
+.offers{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:14px;
+margin-top:25px
+}
+.offer{
+border:1px solid #7a1f30;
+border-radius:14px;
+padding:12px;
+text-align:center;
+cursor:pointer;
+transition:.2s;
+background:#5a1321
+}
+.offer.active{
+border-color:#f5c16c;
+background:#6d1a2a
+}
+.offer img{
+width:100%;
+border-radius:12px;
+margin-bottom:8px
+}
+.offer h3{
+color:#f5c16c;
+font-size:16px
+}
+.offer p{
+color:#f5f5f5
+}
+
+/* فورم */
+form{
+background:#5a1321;
+border-radius:18px;
+padding:22px;
+margin-top:25px
+}
+input,select,textarea,button{
+width:100%;
+padding:12px;
+border-radius:10px;
+border:none;
+margin-bottom:10px;
+font-size:14px
+}
+input,select,textarea{
+background:#fff;
+color:#000
+}
+button{
+background:#f5c16c;
+color:#3a0c15;
+font-weight:800;
+cursor:pointer
+}
+.success{
+display:none;
+color:#22c55e;
+font-weight:800;
+text-align:center
+}
+
+footer{
+text-align:center;
+color:#e2cfcf;
+font-size:13px;
+padding:15px
+}
+
+/* موبايل */
+@media(max-width:768px){
+.ks-split{
+grid-template-columns:1fr
+}
+}
 </style>
 </head>
+
 <body>
-<header><h1>مجموعة كارسيل الأصلية لإصلاح الشعر التالف</h1></header>
 
-<section class="hero">
-<img src="image1.jpg" alt="مجموعة كارسيل">
-<p>احصلي على شعر ناعم وصحي مع مجموعة كارسيل الإيطالية – الحل الأمثل للفرد والترميم والتغذية العميقة.</p>
+<!-- HERO -->
+<div class="hero">
+<h1>نعومة ولمعان من أول استخدام</h1>
+<p>مجموعة كارسيل كولاجين – حل فعلي لمشاكل الشعر</p>
+<a href="#order" class="btn">اطلبي دلوقتي</a>
+</div>
+
+<div class="wrap">
+
+<!-- سكشن مقسوم نصين -->
+<section class="ks-split">
+
+  <div class="ks-box">
+    <h2>ليه كارسيل؟</h2>
+    <ul>
+      <li>يصلّح التلف من الجذور للأطراف</li>
+      <li>ينفع لكل أنواع الشعر حتى المصبوغ</li>
+      <li>نعومة ولمعان من أول استخدام</li>
+      <li>طبيعي وآمن 100% بدون كيماويات</li>
+    </ul>
+  </div>
+
+  <div class="ks-box">
+    <h2>طريقة الاستخدام</h2>
+    <ol>
+      <li>اغسلي شعرك بشامبو مناسب وسيبيه رطب</li>
+      <li>اخلطي الماسك مع <span class="highlight">3 نقط سيروم</span></li>
+      <li>وزّعيه من المنتصف للأطراف</li>
+      <li>سيبيه <span class="highlight">10–15 دقيقة</span> واغسلي بماء فاتر</li>
+    </ol>
+  </div>
+
 </section>
+<p class="offers-title">
+✨ اختاري العرض المناسب ليكي واستمتعي بشعر ناعم وصحي من أول استخدام
+</p>
 
-<section class="content">
-<p style="text-align:center;font-weight:bold;color:#b22222;">✨ اختاري العرض المناسب قبل إدخال بياناتك ✨</p>
+<!-- العروض -->
+<section class="offers">
 
-<div class="offer-card selected" data-offer="الماسك + السيروم — 599ج">
-<h2>💆‍♀️ عرض 1: الماسك + السيروم</h2>
-<p>599 جنيه فقط – خصم خاص لفترة محدودة</p>
+<div class="offer active" data-price="399">
+<img src="offer1.jpg" loading="lazy" alt="">
+<h3>عرض 1 / ماسك كارسيل</h3>
+<p>399 جنيه</p>
 </div>
 
-<div class="offer-card" data-offer="المجموعة الكاملة — 799ج">
-<h2>🌟 عرض 2: المجموعة الكاملة</h2>
-<p>799 جنيه فقط – خصم خاص لفترة محدودة</p>
-<div style="background:#fdf2f2;padding:6px;border-radius:8px;">تحتوي على: الماسك + السيروم + الشامبو + البلسم</div>
+<div class="offer" data-price="599">
+<img src="offer2.jpg" loading="lazy" alt="">
+<h3>عرض 2 / ماسك + سيروم</h3>
+<p>599 جنيه</p>
 </div>
 
-<div class="form-section">
-<p style="color:#b22222;font-weight:bold;text-align:center;">📝 املأ بياناتك، ثم اضغط "تأكيد الطلب الآن" وانتظر قليلاً حتى تظهر رسالة التأكيد ✅</p>
+<div class="offer" data-price="799">
+<img src="offer3.jpg" loading="lazy" alt="">
+<h3>عرض 3 / المجموعة كاملة</h3>
+<p>799 جنيه</p>
+</div>
 
+</section>
+<p class="offers-trust">
+💎 كل العروض أصلية 100% والشحن مجانا فى حالة الاستلام
+</p>
+
+<!-- الفورم -->
+<section id="order">
 <form id="orderForm">
-<input type="hidden" name="offer" id="selectedOffer" value="الماسك + السيروم — 599ج">
-<input type="text" name="name" placeholder="الاسم الكامل" required>
-<input type="text" name="phone" placeholder="رقم الهاتف" required>
+<input type="hidden" id="price" name="offer" value="399">
+<input type="hidden" id="event_id" name="event_id">
 
-<select id="city" name="city" required>
-  <option value="" disabled selected>اختر المحافظة</option>
-  <option value="القاهرة">القاهرة</option>
-  <option value="الجيزة">الجيزة</option>
-  <option value="الإسكندرية">الإسكندرية</option>
-  <option value="الشرقية">الشرقية</option>
-  <option value="الغربية">الغربية</option>
-  <option value="المنوفية">المنوفية</option>
-  <option value="القليوبية">القليوبية</option>
-  <option value="الدقهلية">الدقهلية</option>
-  <option value="المنيا">المنيا</option>
-  <option value="أسيوط">أسيوط</option>
-  <option value="سوهاج">سوهاج</option>
-  <option value="قنا">قنا</option>
-  <option value="الأقصر">الأقصر</option>
-  <option value="أسوان">أسوان</option>
-  <option value="الإسماعيلية">الإسماعيلية</option>
-  <option value="السويس">السويس</option>
-  <option value="دمياط">دمياط</option>
-  <option value="بورسعيد">بورسعيد</option>
-  <option value="البحيرة">البحيرة</option>
-  <option value="كفر الشيخ">كفر الشيخ</option>
-  <option value="مطروح">مطروح</option>
-  <option value="شمال سيناء">شمال سيناء</option>
-  <option value="جنوب سيناء">جنوب سيناء</option>
-  <option value="البحر الأحمر">البحر الأحمر</option>
-  <option value="الوادي الجديد">الوادي الجديد</option>
-  <option value="بني سويف">بني سويف</option>
-  <option value="الفيوم">الفيوم</option>
+<input name="name" placeholder="الاسم الكامل" required>
+<input name="phone" placeholder="رقم الموبايل" required>
+
+<select name="city" required>
+<option value="" disabled selected>اختر المحافظة</option>
+<option>القاهرة</option><option>الجيزة</option><option>الإسكندرية</option>
+<option>الدقهلية</option><option>الشرقية</option><option>الغربية</option>
+<option>المنوفية</option><option>القليوبية</option><option>البحيرة</option>
+<option>دمياط</option><option>بورسعيد</option><option>الإسماعيلية</option>
+<option>السويس</option><option>الفيوم</option><option>بني سويف</option>
+<option>المنيا</option><option>أسيوط</option><option>سوهاج</option>
+<option>قنا</option><option>الأقصر</option><option>أسوان</option>
+<option>مطروح</option><option>البحر الأحمر</option>
+<option>الوادي الجديد</option><option>شمال سيناء</option><option>جنوب سيناء</option>
 </select>
 
-<textarea name="address" placeholder="العنوان الكامل" required></textarea>
+<textarea name="address" placeholder="العنوان" required></textarea>
 
-<button type="submit" id="submitBtn">✔️ تأكيد الطلب الآن</button>
-
-
-
-<div class="success" id="successMsg">✅ تم استلام طلبك بنجاح! سيتم التواصل معك قريبًا.</div>
+<button id="submitBtn">تأكيد الطلب</button>
+<div class="success" id="successMsg">✅ تم تسجيل طلبك بنجاح</div>
 </form>
-</div>
 </section>
 
-<footer><p>© 2025 Karseell Egypt — جميع الحقوق محفوظة.</p></footer>
+</div>
+
+<footer>© Karseell Egypt</footer>
 
 <script>
-const offers=document.querySelectorAll('.offer-card');
-const selectedOffer=document.getElementById('selectedOffer');
-const form=document.getElementById('orderForm');
-const successMsg=document.getElementById('successMsg');
-const submitBtn=document.getElementById('submitBtn');
+const offers=document.querySelectorAll('.offer'),
+priceInput=document.getElementById('price'),
+form=document.getElementById('orderForm'),
+btn=document.getElementById('submitBtn'),
+success=document.getElementById('successMsg');
 
-offers.forEach(offer=>{
-  offer.addEventListener('click',()=>{
-    offers.forEach(o=>o.classList.remove('selected'));
-    offer.classList.add('selected');
-    selectedOffer.value=offer.dataset.offer;
-  });
+offers.forEach(o=>{
+o.onclick=()=>{
+offers.forEach(x=>x.classList.remove('active'));
+o.classList.add('active');
+priceInput.value=o.dataset.price;
+const eventID = 'cart_' + Date.now();
+
+fbq('track','AddToCart',{
+  value: Number(o.dataset.price),
+  currency:'EGP'
+},{
+  eventID: eventID
 });
 
-form.addEventListener('submit',async e=>{
-  e.preventDefault();
-  submitBtn.disabled=true;
-  submitBtn.textContent="⏳ جاري تأكيد الطلب... برجاء الانتظار";
+};
+});
 
-  const data=Object.fromEntries(new FormData(form).entries());
+form.phone.addEventListener('input',()=>{
+form.phone.value=form.phone.value.replace(/\D/g,'');
+});
 
-  try {
-    fbq('track','Purchase',{value:599,currency:'EGP'});
-  } catch(e){}
+form.onsubmit=async e=>{
+e.preventDefault();
+const phone=form.phone.value.trim();
+if(!/^01\d{9}$/.test(phone)){alert('رقم غير صحيح');return;}
 
-  // إرسال البيانات إلى Google Sheet
-  await fetch('https://script.google.com/macros/s/AKfycbwtgrOr7u6Id6Cg4FwVYgIAcU-MbmdYJuGYNOCkR6CF964QLwoUb5bfBJP4kpc-HZI/exec',{
-    method:'POST',
-    mode:'no-cors',
-    headers:{'Content-Type':'application/json'},
-    body:JSON.stringify(data)
+btn.disabled=true;
+btn.textContent='جاري التأكيد...';
+
+const price = Number(priceInput.value);
+const eventID = Date.now().toString();
+
+// نحفظ الـ eventID عشان يتبعت مع الفورم للسيرفر
+document.getElementById('event_id').value = eventID;
+
+// إرسال Purchase من المتصفح
+fbq('track','InitiateCheckout');
+fbq('track','Purchase',{
+  value: price,
+  currency: 'EGP'
+},{
+  eventID: eventID,
+    user_data: {
+      ph: phone,
+      fn: name
+    }
   });
 
-  // تحديث شكل الزر ورسالة النجاح
-  submitBtn.textContent="✅ تم تأكيد طلبك بنجاح!";
-  submitBtn.style.background="#2ecc71";
-  successMsg.style.display='block';
-
-  
-
-  form.reset();
+await fetch('https://script.google.com/macros/s/AKfycbzycwwcpNyH_YMmVEA_doEEE16u8LmsOQGu8F_L0j9dDVuGReLkDdZzkxG7u8xBcoQy7w/exec', {
+  method: 'POST',
+  mode: 'no-cors',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(Object.fromEntries(new FormData(form)))
 });
+
+
+success.style.display='block';
+btn.textContent='تم بنجاح';
+btn.style.background='#22c55e';
+form.reset();
+};
 </script>
 
 </body>
 </html>
+
+
