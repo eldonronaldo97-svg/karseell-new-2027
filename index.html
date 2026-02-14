@@ -349,7 +349,6 @@ fbq('track','Purchase',{
 
 await fetch('https://script.google.com/macros/s/AKfycbzycwwcpNyH_YMmVEA_doEEE16u8LmsOQGu8F_L0j9dDVuGReLkDdZzkxG7u8xBcoQy7w/exec', {
   method: 'POST',
-  mode: 'no-cors',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(Object.fromEntries(new FormData(form)))
 });
@@ -364,5 +363,6 @@ form.reset();
 
 </body>
 </html>
+
 
 
